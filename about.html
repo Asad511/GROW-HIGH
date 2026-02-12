@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grow-High | About Us</title>
+
+<link rel="icon" href="logo.png" type="image/png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@800&display=swap" rel="stylesheet">
+
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Inter', sans-serif; background:#0f0f15; color:#e0e0e0; line-height:1.6; overflow-x:hidden; }
+
+/* HEADER */
+header {
+    position:fixed;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 60px;
+    background:rgba(15,15,21,0.9);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+    box-shadow:0 2px 15px rgba(0,0,0,0.5);
+}
+.logo {
+    font-family:'Roboto', sans-serif;
+    font-size:28px;
+    font-weight:800;
+    letter-spacing:2px;
+    background:linear-gradient(90deg,#00cfff,#0077a3);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+nav a {
+    margin-left:35px;
+    font-weight:700;
+    font-size:18px;
+    text-transform:uppercase;
+    color:#00ffe0;
+    text-decoration:none;
+    transition:0.3s;
+}
+nav a:hover { color:#00a5cc; }
+
+/* HERO */
+.hero {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:70vh;
+    text-align:center;
+    padding-top:100px;
+    background:#0a0a0f;
+}
+.hero h1 {
+    font-family:'Roboto', sans-serif;
+    font-size:56px;
+    color:#00cfff;
+}
+
+/* ABOUT */
+.about {
+    padding:120px 60px;
+    text-align:center;
+}
+.about h2 {
+    font-family:'Roboto', sans-serif;
+    font-size:38px;
+    color:#00cfff;
+    margin-bottom:30px;
+}
+.about p {
+    max-width:900px;
+    margin:0 auto 20px;
+    font-size:18px;
+    color:#b0b0b0;
+}
+
+/* VALUES */
+.values {
+    background:#111;
+    padding:100px 60px;
+}
+.values h2 {
+    text-align:center;
+    font-family:'Roboto', sans-serif;
+    font-size:36px;
+    color:#00cfff;
+    margin-bottom:60px;
+}
+.value-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+.value-card {
+    background:#1a1a1f;
+    padding:30px;
+    border-radius:16px;
+}
+.value-card h3 {
+    color:#00cfff;
+    margin-bottom:10px;
+}
+
+/* TEAM */
+.team {
+    padding:120px 60px;
+    text-align:center;
+}
+.team h2 {
+    font-family:'Roboto', sans-serif;
+    font-size:36px;
+    color:#00cfff;
+    margin-bottom:60px;
+}
+.team-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+.team-card {
+    background:#1a1a1f;
+    border-radius:16px;
+    padding:30px;
+}
+.team-card h3 {
+    color:#00cfff;
+    margin-bottom:5px;
+}
+.team-card span {
+    color:#00ffe0;
+    font-weight:600;
+}
+.team-card p {
+    margin-top:10px;
+    color:#b0b0b0;
+}
+
+/* CTA */
+.cta-banner {
+    background:#00cfff;
+    padding:80px 60px;
+    text-align:center;
+    color:#0f0f15;
+}
+.cta-banner h2 {
+    font-size:36px;
+    margin-bottom:20px;
+}
+.cta-banner a {
+    display:inline-block;
+    padding:18px 50px;
+    background:#0f0f15;
+    color:#00cfff;
+    border-radius:50px;
+    font-weight:600;
+    text-decoration:none;
+}
+
+/* FOOTER */
+footer {
+    padding:80px 60px;
+    text-align:center;
+    background:#111;
+}
+footer h4 {
+    color:#00cfff;
+    margin-bottom:15px;
+}
+footer p, footer a { color:#b0b0b0; }
+
+@media(max-width:768px){
+    header {padding:15px 30px;}
+    .hero h1 {font-size:38px;}
+    .about,.values,.team,.cta-banner,footer {padding:60px 30px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">GROW-HIGH</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="service.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+    <h1>About Grow-High</h1>
+</section>
+
+<section class="about">
+    <h2>Who We Are</h2>
+    <p>Grow-High is a performance-driven digital marketing agency focused on helping businesses scale through data-backed strategies and measurable results.</p>
+    <p>We combine creativity, analytics, and automation to build marketing systems that generate qualified leads, increase conversions, and grow long-term brand value.</p>
+    <p>Our mission is simple: deliver real business growth, not vanity metrics.</p>
+</section>
+
+<section class="values">
+    <h2>Our Core Values</h2>
+    <div class="value-grid">
+        <div class="value-card">
+            <h3>🚀 Growth First</h3>
+            <p>Every strategy we design is focused on ROI, scalability, and sustainable growth.</p>
+        </div>
+        <div class="value-card">
+            <h3>📊 Data Driven</h3>
+            <p>We use analytics and performance metrics to guide every decision.</p>
+        </div>
+        <div class="value-card">
+            <h3>🤝 Transparency</h3>
+            <p>We believe in honest communication, clear reporting, and trust-based partnerships.</p>
+        </div>
+        <div class="value-card">
+            <h3>⚡ Innovation</h3>
+            <p>We stay ahead of trends and technologies to give our clients a competitive edge.</p>
+        </div>
+    </div>
+</section>
+
+<section class="team">
+    <h2>Meet Our Leadership</h2>
+    <div class="team-grid">
+
+        <div class="team-card">
+            <h3>Jon</h3>
+            <span>CEO & Founder</span>
+            <p>Visionary leader driving business strategy, partnerships, and long-term growth direction.</p>
+        </div>
+
+        <div class="team-card">
+            <h3>Raza</h3>
+            <span>Marketing Manager</span>
+            <p>Oversees marketing campaigns, content strategy, and brand positioning across all channels.</p>
+        </div>
+
+        <div class="team-card">
+            <h3>Alis</h3>
+            <span>Ads Manager</span>
+            <p>Specialist in paid advertising optimization, funnel strategy, and conversion tracking.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="cta-banner">
+    <h2>Let’s Build Your Growth Strategy</h2>
+    <a href="mailto:Jon@growhigh.agency">Contact Us</a>
+</section>
+
+<footer>
+    <h4>Grow-High</h4>
+    <p>Email: <a href="mailto:Jon@growhigh.agency">Jon@growhigh.agency</a></p>
+    <p>Website: <a href="https://www.growhigh.agency" target="_blank">www.growhigh.agency</a></p>
+    <p>&copy; 2026 Grow-High. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

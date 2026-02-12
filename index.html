@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grow-High | Marketing Agency</title>
+
+ <!-- Favicon -->
+    <link rel="icon" href="logo.png" type="image/png">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* RESET */
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Inter', sans-serif; background:#0f0f15; color:#e0e0e0; line-height:1.6; overflow-x:hidden; }
+
+/* HEADER */
+header { position:fixed; top:0; width:100%; display:flex; justify-content:space-between; align-items:center; padding:25px 60px; background:rgba(15,15,21,0.9); backdrop-filter:blur(10px); z-index:1000; box-shadow:0 2px 15px rgba(0,0,0,0.5);}
+header h1 { font-family:'Roboto Mono', monospace; font-size:28px; color:#00cfff; letter-spacing:1px; }
+header nav a { margin-left:35px; font-weight:500; transition:color 0.3s; }
+header nav a:hover { color:#00cfff; }
+
+/* HERO */
+.hero { display:flex; flex-direction:column; justify-content:center; align-items:center; height:100vh; text-align:center; position:relative; padding:0 20px; background:#0a0a0f;}
+.hero h2 { font-family:'Roboto Mono', monospace; font-size:56px; font-weight:700; margin-bottom:20px; color:#00cfff; }
+.hero p { font-size:20px; max-width:800px; margin-bottom:40px; color:#b0b0b0; }
+.hero a.cta { padding:18px 50px; background:#00cfff; color:#0f0f15; font-weight:600; border-radius:50px; text-transform:uppercase; letter-spacing:1px; transition:0.3s; }
+.hero a.cta:hover { background:#00a5cc; }
+
+/* HERO OVERLAY SHAPE */
+.hero::before {
+    content:"";
+    position:absolute;
+    width:700px;
+    height:700px;
+    background:linear-gradient(45deg,#00cfff,#0077a3);
+    border-radius:50%;
+    opacity:0.05;
+    top:-150px;
+    left:-200px;
+    z-index:0;
+}
+
+/* SERVICES */
+.services { padding:120px 60px; background:#0f0f15; position:relative; }
+.services h3 { text-align:center; font-family:'Roboto Mono', monospace; font-size:38px; margin-bottom:80px; color:#00cfff; }
+.service-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:30px; }
+.service-card { background:#1a1a1f; border-radius:16px; padding:40px; position:relative; overflow:hidden; transition:transform 0.3s, box-shadow 0.3s; }
+.service-card::before { content:""; position:absolute; top:0; left:0; width:100%; height:100%; background:linear-gradient(120deg,#00cfff,transparent); opacity:0.05; pointer-events:none; }
+.service-card:hover { transform:translateY(-10px); box-shadow:0 20px 40px rgba(0,204,255,0.15); }
+.service-card h4 { font-family:'Roboto Mono', monospace; font-size:22px; margin-bottom:15px; color:#00cfff; }
+.service-card p { font-size:16px; color:#b0b0b0; }
+
+/* STATISTICS */
+.stats { background:#111; padding:100px 60px; display:flex; justify-content:space-around; flex-wrap:wrap; text-align:center; }
+.stat { margin:20px; }
+.stat h4 { font-size:40px; color:#00cfff; margin-bottom:10px; font-family:'Roboto Mono', monospace; }
+.stat p { font-size:16px; color:#b0b0b0; }
+
+/* TESTIMONIALS */
+.testimonials { padding:120px 60px; background:#0f0f15; text-align:center; }
+.testimonials h3 { font-family:'Roboto Mono', monospace; font-size:38px; margin-bottom:80px; color:#00cfff; }
+.testimonial-card { background:#1a1a1f; border-radius:16px; padding:30px; margin:20px auto; max-width:500px; font-style:italic; color:#c0c0c0; box-shadow:0 10px 25px rgba(0,0,0,0.3); transition:transform 0.3s; }
+.testimonial-card:hover { transform:translateY(-10px); }
+
+/* CTA BANNER */
+.cta-banner { background:#00cfff; padding:80px 60px; text-align:center; color:#0f0f15; }
+.cta-banner h3 { font-size:36px; font-weight:700; margin-bottom:20px; }
+.cta-banner a { display:inline-block; padding:18px 50px; background:#0f0f15; color:#00cfff; border-radius:50px; font-weight:600; transition:0.3s; text-transform:uppercase; letter-spacing:1px; }
+.cta-banner a:hover { background:#0077a3; color:#fff; }
+
+/* FOOTER */
+footer { padding:80px 60px; text-align:center; background:#111; }
+footer h4 { font-family:'Roboto Mono', monospace; color:#00cfff; margin-bottom:15px; font-size:20px; }
+footer p, footer a { color:#b0b0b0; font-size:16px; }
+footer a:hover { color:#00cfff; }
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    header {padding:15px 30px;}
+    .hero h2 {font-size:38px;}
+    .hero p {font-size:18px;}
+    .services, .stats, .testimonials, .cta-banner, footer {padding:60px 30px;}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo">GROW-HIGH</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="service.html">Service</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+
+<style>
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: rgba(15,15,21,0.8);
+    backdrop-filter: blur(12px);
+    z-index: 1000;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+/* LOGO */
+.logo {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #00cfff, #0077a3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* NAVIGATION */
+nav a {
+    margin-left: 35px;
+    font-weight: 900; /* extra bold */
+    font-size: 18px; /* slightly larger */
+    text-transform: uppercase;
+    color: #00ffe0; /* professional accent color */
+    transition: color 0.3s ease, transform 0.2s ease;
+    text-decoration: none; /* no underline */
+}
+
+/* Optional subtle hover effect */
+nav a:hover {
+    color: #00a5cc; /* darker accent on hover */
+    transform: scale(1.05); /* slight pop on hover */
+    text-shadow: 0 0 5px rgba(0, 255, 224, 0.4); /* subtle glow */
+}
+
+
+/* Remove previous underline hover pseudo-element */
+nav a::after {
+    display: none;
+}
+
+nav a:hover {
+    color: #00a5cc; /* slightly darker accent on hover */
+}
+
+</style>
+
+
+
+<!-- HERO -->
+<section class="hero">
+    <h2>Elevate Your Digital Growth</h2>
+    <p>Grow-High is a full-service marketing agency delivering data-driven solutions that maximize ROI, drive leads, and build brand authority online.</p>
+    <a href="contact.html" class="cta">Start Your Growth</a>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+    <h3>Our Services</h3>
+    <div class="service-grid">
+        <div class="service-card">
+            <h4>🎯 Lead Generation</h4>
+            <p>Consistent, high-quality leads tailored to your business.</p>
+        </div>
+        <div class="service-card">
+            <h4>📢 Paid Advertising</h4>
+            <p>Google, Facebook & Bing ads optimized for ROI.</p>
+        </div>
+        <div class="service-card">
+            <h4>📧 Email Marketing</h4>
+            <p>Automation systems that convert and retain customers.</p>
+        </div>
+        <div class="service-card">
+            <h4>📱 Social Media Marketing</h4>
+            <p>Build brand authority and audience trust.</p>
+        </div>
+        <div class="service-card">
+            <h4>⭐ Reputation Management</h4>
+            <p>Increase credibility with reviews and brand trust.</p>
+        </div>
+        <div class="service-card">
+            <h4>💻 Website & SEO</h4>
+            <p>Conversion-focused websites with SEO built in.</p>
+        </div>
+    </div>
+</section>
+
+<!-- STATISTICS -->
+<section class="stats" id="stats">
+    <div class="stat">
+        <h4>500+</h4>
+        <p>Clients Served</p>
+    </div>
+    <div class="stat">
+        <h4>10K+</h4>
+        <p>Leads Generated</p>
+    </div>
+    <div class="stat">
+        <h4>95%</h4>
+        <p>Client Satisfaction</p>
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+    <h3>What Our Clients Say</h3>
+    <div class="testimonial-card">
+        “Grow-High transformed our digital presence. Our leads increased 300% within 2 months. Highly professional and data-driven!”
+    </div>
+    <div class="testimonial-card">
+        “The team at Grow-High understands marketing like no other. Their campaigns are precise, effective, and measurable.”
+    </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+    <h3>Ready to Grow Your Business?</h3>
+    <a href="mailto:Jon@growhigh.agency">Get Started Today</a>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+    <h4>Contact Us</h4>
+    <p>Email: <a href="mailto:Jon@growhigh.agency">Jon@growhigh.agency</a></p>
+    <p>Website: <a href="https://www.growhigh.agency" target="_blank">www.growhigh.agency</a></p>
+    <p>&copy; 2026 Grow-High. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+
